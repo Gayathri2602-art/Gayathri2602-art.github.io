@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gayathri V.R | AI Software Engineer</title>
+<meta name="description" content="Portfolio of Gayathri V.R, AI-focused software engineer working with Generative AI, LLM workflows, RAG and backend automation.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0F1720;font-family:'Inter',system-ui,sans-serif;color:#E8EDF2}
+html{scroll-behavior:smooth}
+a{color:#5EEAD4;text-decoration:none}
+a:hover{color:#A7F3E8;text-decoration:underline}
+a{transition:color .2s ease, transform .2s ease, background-color .2s ease, border-color .2s ease}
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.ticker{animation:marquee 32s linear infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.45}}
+#top > div:first-child{animation:fadeIn .8s ease both}
+#top h1{animation:rise .9s .1s cubic-bezier(.2,.7,.2,1) both}
+#top > p{animation:rise .9s .25s cubic-bezier(.2,.7,.2,1) both}
+#top > div:nth-child(5){animation:rise .9s .4s cubic-bezier(.2,.7,.2,1) both}
+#top > div:nth-child(6) > div{animation:rise .9s .55s cubic-bezier(.2,.7,.2,1) both}
+#top > div:nth-child(6) > div:nth-child(2){animation-delay:.7s}
+#top > div:nth-child(6) > div:nth-child(3){animation-delay:.85s}
+section:not(#top){animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+@supports (animation-timeline: view()){
+section:not(#top){animation:rise linear both;animation-timeline:view();animation-range:entry 0% entry 35%}
+}
+a[style*="border-radius:8px"]:hover{transform:translateY(-3px);text-decoration:none}
+section div[style*="border-radius:14px"],section div[style*="border-radius:12px"]{transition:transform .25s ease, border-color .25s ease, box-shadow .25s ease}
+section div[style*="border-radius:14px"]:hover,section div[style*="border-radius:12px"]:hover{transform:translateY(-6px);border-color:#5EEAD4;box-shadow:0 14px 32px rgba(0,0,0,.35)}
+#top > div:first-child::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:currentColor;margin-right:10px;animation:pulse 2s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){
+*{animation:none !important;transition:none !important}
+}
+</style>
+
+<script>
+/* =====================================================================
+   EDIT YOUR CONTENT HERE
+   To add a job: copy one { ... } block inside "experience", paste it
+   ABOVE the others (newest first) and change the text.
+   Same for "projects", "skills" and "certifications".
+   Keep the commas and quotes exactly as they are.
+   Set  now: true  on the job you currently hold (shows the "Now" tag).
+   Leave  link: ""  empty if a project has no GitHub link.
+   ===================================================================== */
+const CONTENT = {
+
+  focusAreas: [
+    "Generative AI", "LLM Orchestration", "Agentic Workflows",
+    "RAG Pipelines", "LLM Fine-tuning", "Python ETL"
+  ],
+
+  experience: [
+    {
+      dates: "Nov 2024 – Present",
+      now: true,
+      location: "Bengaluru, India",
+      role: "Software Engineer R&D",
+      company: "Anritsu India Pvt Ltd",
+      bullets: [
+        "Spearheaded an AI-driven automation pipeline using LLM fine-tuning, prompt engineering and agentic AI workflows. It replaced a 2–3 week manual process run by 9–10 engineers and cut engineering effort by about 90%.",
+        "Built Python ETL pipelines that compare 3GPP releases, detect protocol changes and automate regression validation.",
+        "Maintained the Anritsu RTD backend in Java: feature updates, bug fixes, test-case upgrades and version management.",
+        "Managed RTD DevOps and integration with Perforce, Jenkins CI/CD and Jira for tasks, defects and release tracking.",
+        "Worked with development, QA and protocol teams, tested with hardware and UE connections, and root-caused issues from application logs.",
+        "Applied GitHub Copilot, OpenAI APIs, LLM workflows and agentic AI to automate repetitive engineering tasks."
+      ]
+    },
+    {
+      dates: "May 2023 – Jun 2023",
+      now: false,
+      location: "Sriharikota, India",
+      role: "Intern",
+      company: "Satish Dhawan Space Centre SHAR, ISRO",
+      bullets: [
+        "Configured a Schneider M340 PLC with I/O modules and wrote C programs for real-time data processing, relay control and hardware communication.",
+        "Integrated SCADA with the PLC for real-time parameter monitoring and display."
+      ]
+    }
+  ],
+
+  projects: [
+    {
+      date: "Mar – May 2026",
+      title: "Flight AI: multimodal booking agent",
+      description: "Voice and text flight assistant. 4-bit NF4 quantization of LLaMA 3.2 3B (about 8x memory reduction) and FP16 Whisper run both models on a single GPU. Tiered intent extraction (regex, lookup, then LLM) keeps LLM calls low, and CSV caching drops repeat-route latency from about 10s to near zero.",
+      stack: "LLaMA 3.2 · Whisper · Gradio · Pandas · gTTS",
+      link: "https://github.com/Gayathri2602-art/Multimodal-Flight-AI-LLaMA-Whisper-Powered-"
+    },
+    {
+      date: "Jan – Feb 2026",
+      title: "Careers Analyzer",
+      description: "Gemini-powered tool that scrapes company websites, finds AI/ML job listings and streams structured insights in real time: culture, roles, required skills and INR-converted salaries, through a modular Python design with engineered prompts.",
+      stack: "Gemini · BeautifulSoup4 · Gradio · OpenAI SDK",
+      link: "https://github.com/Gayathri2602-art/Career-Analyzer-Gemini-LLM-"
+    },
+    {
+      date: "Dec 2025 – Feb 2026",
+      title: "Bed-Time Buddy: RAG chatbot",
+      description: "A RAG pipeline with LangChain, Pinecone and MiniLM embeddings that retrieves and generates context-aware bedtime stories from a PDF knowledge base. Strict prompt templates keep output grounded and child-safe, served through Ollama (phi3) on a Flask interface.",
+      stack: "LangChain · Pinecone · Ollama · Flask · HuggingFace",
+      link: "https://github.com/Gayathri2602-art/Bed-Time-Buddy--A-RAG-based-chatbot"
+    },
+    {
+      date: "Sept 2023 – Mar 2024",
+      title: "Gesture Sense: touchless laptop control",
+      description: "A 3D CNN + ConvLSTM model trained on the Jester dataset to classify 6 gestures in real time (about 77% accuracy with ensemble learning and confidence-based filtering). OpenCV and MediaPipe map gestures to volume, brightness and mouse control.",
+      stack: "OpenCV · MediaPipe · TensorFlow/Keras · Python",
+      link: ""
+    },
+    {
+      date: "",
+      title: "AI Meeting Minutes Generator",
+      description: "Converts meeting audio into structured minutes with summaries, decisions and action items.",
+      stack: "",
+      link: "https://github.com/Gayathri2602-art/AI-Meeting-Minutes-Generator"
+    },
+    {
+      date: "",
+      title: "ExplainAnything AI",
+      description: "A web app that explains code, concepts or any text in clear, simple language using Gemini and Gradio.",
+      stack: "",
+      link: "https://github.com/Gayathri2602-art/ExplainAnything-AI"
+    },
+    {
+      date: "",
+      title: "Human Emotion Detection",
+      description: "A real-time facial emotion recognition system using deep learning and computer vision, working on live webcam feed and static images.",
+      stack: "",
+      link: "https://github.com/Gayathri2602-art/Human-Emotion-Detection"
+    }
+  ],
+
+  skills: [
+    { title: "AI & machine learning", text: "Generative AI, LLMs, RAG, agentic AI, prompt engineering, NLP, deep learning, computer vision, LLM fine-tuning, embeddings, vector databases, LLM evaluation, AI inference optimization, MLPerf benchmarking" },
+    { title: "Languages", text: "Python (OOP, data structures, automation), SQL, C, C++" },
+    { title: "Frameworks & libraries", text: "TensorFlow, PyTorch, Scikit-learn, LangChain, LlamaIndex, Hugging Face Transformers, Flask, FastAPI, Pandas, NumPy, Matplotlib, OpenCV, CrewAI" },
+    { title: "Cloud & DevOps", text: "Azure, AWS, Jenkins, Docker, Git, GitHub, Perforce, CI/CD pipelines, Jira" },
+    { title: "Tools & platforms", text: "OpenAI SDK, Google Gemini, Claude, GitHub Copilot, Pinecone, Hugging Face, Power BI, UiPath, n8n, Visual Studio" }
+  ],
+
+  certifications: [
+    "NVIDIA-Certified Associate: Generative AI LLMs",
+    "Machine Learning, Data Science & AI Engineering with Python",
+    "Professional Certificate, IBM Machine Learning",
+    "AWS Academy Graduate: Cloud Foundations, Machine Learning",
+    "Neural Networks and Deep Learning"
+  ]
+};
+/* ============================ END OF CONTENT ============================ */
+</script>
+</head>
+<body>
+
+<div style="background:#0F1720; color:#E8EDF2; font-family:'Inter',system-ui,sans-serif; line-height:1.6; min-height:100vh">
+
+<!-- NAV -->
+<div style="max-width:1120px; margin:0 auto; padding:20px 24px; display:flex; flex-wrap:wrap; gap:16px; align-items:center; justify-content:space-between; box-sizing:border-box">
+<a href="#top" style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:20px; color:#E8EDF2">gayathri<span style="color:#5EEAD4">.ai</span></a>
+<nav style="display:flex; flex-wrap:wrap; gap:6px 24px; font-size:15px">
+<a href="#about" style="color:#9FB0C0">About</a>
+<a href="#experience" style="color:#9FB0C0">Experience</a>
+<a href="#projects" style="color:#9FB0C0">Projects</a>
+<a href="#skills" style="color:#9FB0C0">Skills</a>
+<a href="#education" style="color:#9FB0C0">Education</a>
+<a href="#contact" style="color:#9FB0C0">Contact</a>
+</nav>
+</div>
+
+<!-- HERO -->
+<section id="top" style="max-width:1120px; margin:0 auto; padding:72px 24px 80px; box-sizing:border-box">
+<div style="font-family:'IBM Plex Mono',monospace; font-size:14px; color:#5EEAD4; margin-bottom:20px">Software Engineer R&amp;D · Bengaluru, India</div>
+<h1 style="margin:0 0 20px; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:clamp(52px,11vw,132px); line-height:1; letter-spacing:-0.03em; max-width:1000px">Gayathri V.R<span style="color:#5EEAD4">.</span></h1>
+<p style="margin:0 0 12px; max-width:680px; font-size:22px; color:#E8EDF2">Software Engineer at <strong>Anritsu India</strong>, turning slow manual engineering work into LLM-powered automation.</p>
+<p style="margin:0 0 36px; font-family:'IBM Plex Mono',monospace; font-size:17px; color:#5EEAD4">LLMs · Agents · RAG · Automation</p>
+<div style="display:flex; flex-wrap:wrap; gap:12px; margin-bottom:56px">
+<a href="#projects" style="display:inline-block; padding:13px 24px; min-height:20px; background:#5EEAD4; color:#0F1720; font-weight:600; border-radius:8px">See my work ↘</a>
+<a href="mailto:v.r.gayathri.1818@gmail.com" style="display:inline-block; padding:12px 24px; border:1px solid #3A4A5A; color:#E8EDF2; font-weight:600; border-radius:8px">Say hi</a>
+</div>
+<div style="display:flex; flex-wrap:wrap; gap:16px">
+<div style="flex:1 1 220px; padding:20px 24px; background:#17212C; border:1px solid #263544; border-radius:12px">
+<div style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:36px; color:#5EEAD4">~90%</div>
+<div style="color:#9FB0C0; font-size:15px">engineering effort reduced by an LLM automation pipeline</div>
+</div>
+<div style="flex:1 1 220px; padding:20px 24px; background:#17212C; border:1px solid #263544; border-radius:12px">
+<div style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:36px; color:#5EEAD4">NVIDIA</div>
+<div style="color:#9FB0C0; font-size:15px">Certified Associate, Generative AI LLMs</div>
+</div>
+<div style="flex:1 1 220px; padding:20px 24px; background:#17212C; border:1px solid #263544; border-radius:12px">
+<div style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:36px; color:#5EEAD4">9.33</div>
+<div style="color:#9FB0C0; font-size:15px">CGPA, B.Tech in ECE with AI &amp; ML specialization</div>
+</div>
+</div>
+</section>
+
+<!-- TICKER -->
+<div style="border-top:1px solid #263544; border-bottom:1px solid #263544; overflow:hidden; background:#121C26">
+<div class="ticker" id="ticker" style="display:flex; width:max-content; padding:18px 0; font-family:'IBM Plex Mono',monospace; font-size:15px; color:#9FB0C0; white-space:nowrap"></div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" style="max-width:1120px; margin:0 auto; padding:64px 24px; box-sizing:border-box; border-top:1px solid #263544">
+<div style="display:flex; flex-wrap:wrap; gap:32px 64px">
+<h2 style="flex:1 1 200px; margin:0; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:32px">About me</h2>
+<div style="flex:3 1 480px; font-size:18px; color:#C7D2DD; min-width:0">
+<p style="margin:0 0 16px">I work across Generative AI, data engineering, machine learning and backend automation. My day-to-day mixes Python ETL pipelines, LLM fine-tuning, prompt engineering and agentic workflows with the DevOps side of shipping software.</p>
+<p style="margin:0">I am skilled with LangChain, LlamaIndex, vector databases, Snowflake, Azure Data Factory and cloud-native AI on Azure and AWS, and I enjoy turning slow, repetitive engineering processes into automated ones.</p>
+<div style="display:flex; flex-wrap:wrap; gap:16px 48px; margin-top:32px; padding-top:24px; border-top:1px solid #263544">
+<div style="flex:1 1 220px"><div style="font-family:'IBM Plex Mono',monospace; font-size:13px; color:#5EEAD4; margin-bottom:4px">Currently</div><div style="font-size:16px">Software Engineer R&amp;D at Anritsu India, Bengaluru</div></div>
+<div style="flex:1 1 220px"><div style="font-family:'IBM Plex Mono',monospace; font-size:13px; color:#5EEAD4; margin-bottom:4px">Focus</div><div style="font-size:16px">LLM automation, RAG applications, agentic AI</div></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- EXPERIENCE (edit in the CONTENT block at the top of this file) -->
+<section id="experience" style="max-width:1120px; margin:0 auto; padding:64px 24px; box-sizing:border-box; border-top:1px solid #263544">
+<h2 style="margin:0 0 40px; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:32px">Experience</h2>
+<div id="experience-list"></div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" style="max-width:1120px; margin:0 auto; padding:64px 24px; box-sizing:border-box; border-top:1px solid #263544">
+<h2 style="margin:0 0 12px; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:32px">Projects</h2>
+<p style="margin:0 0 40px; color:#9FB0C0; font-size:17px">Selected work from my GitHub. Each card links to its repository.</p>
+<div id="project-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:20px"></div>
+<div style="margin-top:28px"><a href="https://github.com/Gayathri2602-art?tab=repositories" style="font-weight:600">See all repositories on GitHub →</a></div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" style="max-width:1120px; margin:0 auto; padding:64px 24px; box-sizing:border-box; border-top:1px solid #263544">
+<h2 style="margin:0 0 40px; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:32px">Skills</h2>
+<div id="skills-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:32px"></div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" style="max-width:1120px; margin:0 auto; padding:64px 24px; box-sizing:border-box; border-top:1px solid #263544">
+<div style="display:flex; flex-wrap:wrap; gap:40px 64px">
+<div style="flex:1 1 400px; min-width:0">
+<h2 style="margin:0 0 24px; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:32px">Education</h2>
+<div style="font-family:'IBM Plex Mono',monospace; font-size:14px; color:#5EEAD4">Jul 2020 – May 2024</div>
+<h3 style="margin:4px 0; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:22px">Gandhi Institute of Technology and Management (GITAM)</h3>
+<p style="margin:0; color:#C7D2DD">B.Tech, Electronics and Communications Engineering, specialized in Artificial Intelligence &amp; Machine Learning. 9.33 CGPA. Bangalore, India.</p>
+</div>
+<div style="flex:1 1 400px; min-width:0">
+<h2 style="margin:0 0 24px; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:32px">Certifications</h2>
+<ul id="cert-list" style="margin:0; padding-left:20px; color:#C7D2DD; display:flex; flex-direction:column; gap:8px"></ul>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="max-width:1120px; margin:0 auto; padding:80px 24px 96px; box-sizing:border-box; border-top:1px solid #263544">
+<h2 style="margin:0 0 16px; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:clamp(32px,5vw,52px); letter-spacing:-0.02em">Let's build <em style="color:#5EEAD4">something smart.</em></h2>
+<p style="margin:0 0 32px; max-width:560px; color:#9FB0C0; font-size:18px">Open to conversations about AI engineering, LLM applications and automation.</p>
+<div style="display:flex; flex-wrap:wrap; gap:12px; margin-bottom:64px">
+<a href="mailto:v.r.gayathri.1818@gmail.com" style="display:inline-block; padding:13px 24px; background:#5EEAD4; color:#0F1720; font-weight:600; border-radius:8px">v.r.gayathri.1818@gmail.com</a>
+<a href="https://www.linkedin.com/in/gayathri-v-r-7b66a9250/" style="display:inline-block; padding:12px 24px; border:1px solid #3A4A5A; color:#E8EDF2; font-weight:600; border-radius:8px">LinkedIn</a>
+<a href="https://github.com/Gayathri2602-art" style="display:inline-block; padding:12px 24px; border:1px solid #3A4A5A; color:#E8EDF2; font-weight:600; border-radius:8px">GitHub</a>
+</div>
+<div style="color:#9FB0C0; font-size:14px">© 2026 Gayathri V.R</div>
+</section>
+
+</div>
+
+<script>
+(function () {
+  var A = "#5EEAD4";
+  function esc(s) {
+    return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  }
+  function put(id, html) {
+    var el = document.getElementById(id);
+    if (el) el.innerHTML = html;
+  }
+
+  var ticker = CONTENT.focusAreas.map(function (t) {
+    return '<span style="padding:0 28px">' + esc(t) + '</span><span style="color:' + A + '">✦</span>';
+  }).join("");
+  put("ticker", ticker + ticker);
+
+  put("experience-list", CONTENT.experience.map(function (j) {
+    var now = j.now ? ' <span style="margin-left:8px; padding:2px 10px; background:' + A + '; color:#0F1720; border-radius:999px; font-size:12px; font-weight:500">Now</span>' : "";
+    var lis = j.bullets.map(function (b) { return "<li>" + esc(b) + "</li>"; }).join("");
+    return '<div style="display:flex; flex-wrap:wrap; gap:16px 48px; margin-bottom:56px">' +
+      '<div style="flex:1 1 220px"><div style="font-family:\'IBM Plex Mono\',monospace; font-size:14px; color:' + A + '">' + esc(j.dates) + now + '</div>' +
+      '<div style="color:#9FB0C0; font-size:15px">' + esc(j.location) + '</div></div>' +
+      '<div style="flex:3 1 480px; min-width:0"><h3 style="margin:0; font-family:\'Space Grotesk\',sans-serif; font-weight:700; font-size:24px">' + esc(j.role) + '</h3>' +
+      '<div style="color:#9FB0C0; margin-bottom:16px">' + esc(j.company) + '</div>' +
+      '<ul style="margin:0; padding-left:20px; color:#C7D2DD; display:flex; flex-direction:column; gap:10px">' + lis + '</ul></div></div>';
+  }).join(""));
+
+  put("project-grid", CONTENT.projects.map(function (p) {
+    var date = p.date ? '<div style="font-family:\'IBM Plex Mono\',monospace; font-size:13px; color:' + A + '">' + esc(p.date) + '</div>' : "";
+    var stack = p.stack ? '<div style="font-family:\'IBM Plex Mono\',monospace; font-size:12px; color:#9FB0C0">' + esc(p.stack) + '</div>' : "";
+    var link = p.link ? '<a href="' + esc(p.link) + '" style="margin-top:auto; font-weight:600">View on GitHub →</a>' : "";
+    return '<div style="padding:28px; background:#17212C; border:1px solid #263544; border-radius:14px; display:flex; flex-direction:column; gap:12px">' +
+      date +
+      '<h3 style="margin:0; font-family:\'Space Grotesk\',sans-serif; font-weight:700; font-size:22px">' + esc(p.title) + '</h3>' +
+      '<p style="margin:0; color:#C7D2DD; font-size:15px">' + esc(p.description) + '</p>' +
+      stack + link + '</div>';
+  }).join(""));
+
+  put("skills-grid", CONTENT.skills.map(function (s) {
+    return '<div><h3 style="margin:0 0 12px; font-family:\'IBM Plex Mono\',monospace; font-weight:500; font-size:14px; color:' + A + '">' + esc(s.title) + '</h3>' +
+      '<p style="margin:0; color:#C7D2DD">' + esc(s.text) + '</p></div>';
+  }).join(""));
+
+  put("cert-list", CONTENT.certifications.map(function (c) { return "<li>" + esc(c) + "</li>"; }).join(""));
+})();
+</script>
+</body>
+</html>
